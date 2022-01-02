@@ -1,0 +1,87 @@
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">   
+        <title>GenPass</title>
+        <style>
+            body {
+              background-color: black;
+            }
+
+            #heading {
+                position: absolute;
+                height: 70px;
+                left: 484px;
+                right: 485px;
+                top: 50px;
+
+                font-family: 'Abel', sans-serif;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 60px;
+                line-height: 70px;
+
+                color: #FFFFFF;
+            }
+
+            #character {
+                position: absolute;
+                height: 57px;
+                width: 50%;
+                left: 25%;
+                right: 0px;
+                top: 30%;
+
+                background: #FFFFFF;
+                border-radius: 11px;
+            }
+
+            #button {
+                position: absolute;
+                width: 260px;
+                height: 45px;
+                left: 626px;
+                top: 44%;
+
+                background: #FFFFFF;
+                border-radius: 11px;
+                border-width: 5px;
+                border-color: rgb(75, 75, 75);
+            }
+
+            #password {
+                position: absolute;
+                left: 665px;
+                right: 15%;
+                top: 58%;
+                bottom: 392px;
+
+                font-family: 'Abel', sans-serif;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 40px;
+                line-height: 47px;
+                /* identical to box height */
+
+
+                color: #FFFFFF;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div id="heading">
+            Password Generator
+        </div>
+        <div>
+            <form id="form">
+                <input type="number" placeholder="How many characters?" id="character"/>
+                <button type="button" onclick="genPass()" id="button">Generate Password</button>
+            </form>
+        </div>
+        <div id="password"></div>
+        <script src="javascript1.js"></script>
+    </body>
+</html>
